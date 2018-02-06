@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('phonebook');
 });
+// переводим на главную если вбита к примеру  phonebook.bas/home
+Route::get('/{name}', function () {
+    return redirect('/');
+})->where('name','[A-Za-z]+');
