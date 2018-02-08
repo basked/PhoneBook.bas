@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('phonebook');
+    return view('welcome');
 });
 // переводим на главную если вбита к примеру  phonebook.bas/home
-Route::get('/{name}', function () {
-    return redirect('/');
+Route::get('phonebook/{name}', function () {
+    return redirect('/phonebook/');
 })->where('name','[A-Za-z]+');
+
+Route::resource('phonebook','PhonebookController');
