@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PhonebookController extends Controller
 {
-  //  protected $filable = [tn, name, lastname, patronymic];
+    //  protected $filable = [tn, name, lastname, patronymic];
 
     /**
      * Display a listing of the resource.
@@ -43,9 +43,10 @@ class PhonebookController extends Controller
         $pb->name = $request->name;
         $pb->lastname = $request->lastname;
         $pb->patronymic = $request->patronymic;
-        //  $pb->birthday = $request->birthday;
-        //   $pb->phone_mobile = $request->phone_mobile;
-        //    $pb->phone_home = $request->phone_home;
+        $pb->birthday = $request->birthday;
+        $pb->phone_mobile = $request->phone_mobile;
+        $pb->phone_home = $request->phone_home;
+
         $pb->save();
 
 

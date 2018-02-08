@@ -38,6 +38,18 @@
                         <input class="input" type="text" placeholder="Birthday" v-model="list.birthday">
                     </div>
                 </div>
+                <div class="field">
+                    <label class="label" style="color: #0a0a0a;">Birthday</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Phone mobile" v-model="list.phone_mobile">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" style="color: #0a0a0a;">Phone home</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Birthday" v-model="list.phone_home">
+                    </div>
+                </div>
             </section>
             <footer class="modal-card-foot">
                 <button class="button is-success" @click='save'>Save changes</button>
@@ -55,8 +67,11 @@
                     tn: 2398,
                     name: 'Dzmitry',
                     lastname: 'Misiulia',
-                    patronymic: 'Nikolaevich'
-                    // ,  birthday: new Date()
+                    patronymic: 'Nikolaevich',
+                    birthday: '10.09.1986',
+                    phone_mobile: '+375 29 821-03-44',
+                    phone_home: '42-55-55'
+
                 }
             }
         },

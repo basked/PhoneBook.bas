@@ -43977,6 +43977,70 @@ var render = function() {
               }
             })
           ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field" }, [
+          _c(
+            "label",
+            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
+            [_vm._v("Birthday")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "control" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.list.phone_mobile,
+                  expression: "list.phone_mobile"
+                }
+              ],
+              staticClass: "input",
+              attrs: { type: "text", placeholder: "Phone mobile" },
+              domProps: { value: _vm.list.phone_mobile },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.list, "phone_mobile", $event.target.value)
+                }
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field" }, [
+          _c(
+            "label",
+            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
+            [_vm._v("Phone home")]
+          ),
+          _vm._v(" "),
+          _c("div", { staticClass: "control" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.list.phone_home,
+                  expression: "list.phone_home"
+                }
+              ],
+              staticClass: "input",
+              attrs: { type: "text", placeholder: "Birthday" },
+              domProps: { value: _vm.list.phone_home },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.list, "phone_home", $event.target.value)
+                }
+              }
+            })
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -44114,6 +44178,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['openmodal'],
@@ -44123,8 +44199,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 tn: 2398,
                 name: 'Dzmitry',
                 lastname: 'Misiulia',
-                patronymic: 'Nikolaevich'
-                // ,  birthday: new Date()
+                patronymic: 'Nikolaevich',
+                birthday: '10.09.1986',
+                phone_mobile: '+375 29 821-03-44',
+                phone_home: '42-55-55'
+
             }
         };
     },
