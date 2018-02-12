@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('phonebook');
 });
 // переводим на главную если вбита к примеру  phonebook.bas/home
 Route::get('phonebook/{name}', function () {

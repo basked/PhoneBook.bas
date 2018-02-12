@@ -43809,7 +43809,7 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "modal-card" }, [
       _c("header", { staticClass: "modal-card-head" }, [
-        _c("p", { staticClass: "modal-card-title" }, [_vm._v("Modal title")]),
+        _c("p", { staticClass: "modal-card-title" }, [_vm._v("Add Person")]),
         _vm._v(" "),
         _c("button", {
           staticClass: "delete",
@@ -43822,8 +43822,11 @@ var render = function() {
         _c("div", { staticClass: "field" }, [
           _c(
             "label",
-            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
-            [_vm._v("Table Number")]
+            {
+              staticClass: "label",
+              staticStyle: { color: "#0a0a0a", "text-align": "left" }
+            },
+            [_vm._v("Table number")]
           ),
           _vm._v(" "),
           _c("div", { staticClass: "control" }, [
@@ -43837,7 +43840,8 @@ var render = function() {
                 }
               ],
               staticClass: "input",
-              attrs: { type: "text", placeholder: "Table Number" },
+              class: { "is-danger": _vm.errors.tn },
+              attrs: { type: "text", placeholder: "Table number" },
               domProps: { value: _vm.list.tn },
               on: {
                 input: function($event) {
@@ -43848,13 +43852,22 @@ var render = function() {
                 }
               }
             })
-          ])
+          ]),
+          _vm._v(" "),
+          _vm.errors.tn
+            ? _c("small", { staticClass: "has-text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.tn[0]))
+              ])
+            : _vm._e()
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "field" }, [
           _c(
             "label",
-            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
+            {
+              staticClass: "label",
+              staticStyle: { color: "#0a0a0a", "text-align": "left" }
+            },
             [_vm._v("Name")]
           ),
           _vm._v(" "),
@@ -43869,6 +43882,7 @@ var render = function() {
                 }
               ],
               staticClass: "input",
+              class: { "is-danger": _vm.errors.name },
               attrs: { type: "text", placeholder: "Name" },
               domProps: { value: _vm.list.name },
               on: {
@@ -43880,14 +43894,23 @@ var render = function() {
                 }
               }
             })
-          ])
+          ]),
+          _vm._v(" "),
+          _vm.errors.name
+            ? _c("small", { staticClass: "has-text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.name[0]))
+              ])
+            : _vm._e()
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "field" }, [
           _c(
             "label",
-            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
-            [_vm._v("LastName")]
+            {
+              staticClass: "label",
+              staticStyle: { color: "#0a0a0a", "text-align": "left" }
+            },
+            [_vm._v("Last name")]
           ),
           _vm._v(" "),
           _c("div", { staticClass: "control" }, [
@@ -43901,7 +43924,8 @@ var render = function() {
                 }
               ],
               staticClass: "input",
-              attrs: { type: "text", placeholder: "LastName" },
+              class: { "is-danger": _vm.errors.lastname },
+              attrs: { type: "text", placeholder: "Last name" },
               domProps: { value: _vm.list.lastname },
               on: {
                 input: function($event) {
@@ -43912,13 +43936,22 @@ var render = function() {
                 }
               }
             })
-          ])
+          ]),
+          _vm._v(" "),
+          _vm.errors.lastname
+            ? _c("small", { staticClass: "has-text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.lastname[0]))
+              ])
+            : _vm._e()
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "field" }, [
           _c(
             "label",
-            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
+            {
+              staticClass: "label",
+              staticStyle: { color: "#0a0a0a", "text-align": "left" }
+            },
             [_vm._v("Patronymic")]
           ),
           _vm._v(" "),
@@ -43933,6 +43966,7 @@ var render = function() {
                 }
               ],
               staticClass: "input",
+              class: { "is-danger": _vm.errors.patronymic },
               attrs: { type: "text", placeholder: "Patronymic" },
               domProps: { value: _vm.list.patronymic },
               on: {
@@ -43944,13 +43978,22 @@ var render = function() {
                 }
               }
             })
-          ])
+          ]),
+          _vm._v(" "),
+          _vm.errors.patronymic
+            ? _c("small", { staticClass: "has-text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.patronymic[0]))
+              ])
+            : _vm._e()
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "field" }, [
           _c(
             "label",
-            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
+            {
+              staticClass: "label",
+              staticStyle: { color: "#0a0a0a", "text-align": "left" }
+            },
             [_vm._v("Birthday")]
           ),
           _vm._v(" "),
@@ -43965,6 +44008,7 @@ var render = function() {
                 }
               ],
               staticClass: "input",
+              class: { "is-danger": _vm.errors.birthday },
               attrs: { type: "text", placeholder: "Birthday" },
               domProps: { value: _vm.list.birthday },
               on: {
@@ -43976,14 +44020,23 @@ var render = function() {
                 }
               }
             })
-          ])
+          ]),
+          _vm._v(" "),
+          _vm.errors.birthday
+            ? _c("small", { staticClass: "has-text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.birthday[0]))
+              ])
+            : _vm._e()
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "field" }, [
           _c(
             "label",
-            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
-            [_vm._v("Birthday")]
+            {
+              staticClass: "label",
+              staticStyle: { color: "#0a0a0a", "text-align": "left" }
+            },
+            [_vm._v("Phone mobile")]
           ),
           _vm._v(" "),
           _c("div", { staticClass: "control" }, [
@@ -43997,7 +44050,8 @@ var render = function() {
                 }
               ],
               staticClass: "input",
-              attrs: { type: "text", placeholder: "Phone mobile" },
+              class: { "is-danger": _vm.errors.phone_mobile },
+              attrs: { type: "tel", placeholder: "Phone mobile" },
               domProps: { value: _vm.list.phone_mobile },
               on: {
                 input: function($event) {
@@ -44008,13 +44062,22 @@ var render = function() {
                 }
               }
             })
-          ])
+          ]),
+          _vm._v(" "),
+          _vm.errors.phone_mobile
+            ? _c("small", { staticClass: "has-text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.phone_mobile[0]))
+              ])
+            : _vm._e()
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "field" }, [
           _c(
             "label",
-            { staticClass: "label", staticStyle: { color: "#0a0a0a" } },
+            {
+              staticClass: "label",
+              staticStyle: { color: "#0a0a0a", "text-align": "left" }
+            },
             [_vm._v("Phone home")]
           ),
           _vm._v(" "),
@@ -44029,7 +44092,8 @@ var render = function() {
                 }
               ],
               staticClass: "input",
-              attrs: { type: "text", placeholder: "Birthday" },
+              class: { "is-danger": _vm.errors.phone_home },
+              attrs: { type: "tel", placeholder: "Phone home" },
               domProps: { value: _vm.list.phone_home },
               on: {
                 input: function($event) {
@@ -44040,7 +44104,13 @@ var render = function() {
                 }
               }
             })
-          ])
+          ]),
+          _vm._v(" "),
+          _vm.errors.phone_home
+            ? _c("small", { staticClass: "has-text-danger" }, [
+                _vm._v(_vm._s(_vm.errors.phone_home[0]))
+              ])
+            : _vm._e()
         ])
       ]),
       _vm._v(" "),
@@ -44190,6 +44260,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['openmodal'],
@@ -44201,12 +44278,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 lastname: 'Misiulia',
                 patronymic: 'Nikolaevich',
                 birthday: '10.09.1986',
-                phone_mobile: '+375 29 821-03-44',
-                phone_home: '42-55-55'
-
-            }
+                phone_mobile: '375298210344',
+                phone_home: '425555'
+            },
+            errors: {}
         };
     },
+
 
     methods: {
         close: function close() {
@@ -44218,7 +44296,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             axios.post('/phonebook', this.$data.list).then(function (response) {
                 return _this.close();
             }).catch(function (error) {
-                return console.log(error);
+                return _this.errors = error.response.data.errors;
             });
         }
     }
