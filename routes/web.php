@@ -20,3 +20,7 @@ Route::get('phonebook/{name}', function () {
 })->where('name','[A-Za-z]+');
 
 Route::resource('phonebook','PhonebookController');
+
+
+// Работа с Guzzle
+Route::get('guz','GuzzleController@parse');

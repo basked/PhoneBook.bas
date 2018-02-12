@@ -8,10 +8,11 @@
         "php": ">=7.0.0",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "guzzlehttp/guzzle":"~6.3"
     },
     "require-dev": {
-        "barryvdh/laravel-ide-helper": "^2.4",
+        "barryvdh/laravel-ide-helper": "^2.3",
         "filp/whoops": "~2.0",
         "fzaninotto/faker": "~1.4",
         "mockery/mockery": "~1.0",
@@ -41,7 +42,7 @@
     "scripts": {
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "artisan ide-helper:generate",
+           "artisan ide-helper:generate",
             "artisan ide-helper:meta",
             "artisan optimize"
         ],
