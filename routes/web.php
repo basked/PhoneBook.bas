@@ -23,4 +23,6 @@ Route::resource('phonebook','PhonebookController');
 
 
 // Работа с Guzzle
-Route::get('guz','GuzzleController@parse');
+Route::get('guz','GuzzleController@parseCandylady');
+
+Route::get('test','GuzzleController@test');
